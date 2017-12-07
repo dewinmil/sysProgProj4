@@ -1,7 +1,7 @@
 make: files
 	ls -laR ~/ > files
 
-runSuummary: filesummary.awk files
+runSummary: filesummary.awk files
 	gawk -f filesummary.awk files	 
 
 runPassword: pwfile.awk
